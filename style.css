@@ -1,0 +1,13 @@
+.background {
+    background-color: rgb(56, 56, 56);
+}
+
+nav {
+    /*background: linear-gradient(#004aad, #cb6ce6); */
+    
+}
+/*
+button {
+    @apply bg-grey-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+*/
