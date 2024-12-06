@@ -1,20 +1,19 @@
 
 
-.background {
-    background-color: rgb(56, 56, 56);
-}
-/*
-div.navbar {
-    background: linear-gradient(#004aad, #cb6ce6);
-    margin: 3%;
-}
-*/
-/*
-button {
-    margin: 20px;
-}
-*/
-
 p {
     font-family: fira
+}
+
+.fira-code {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fira-sans {
+    font-family: "Fira Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
