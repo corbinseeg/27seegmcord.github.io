@@ -11,3 +11,19 @@
     font-weight: 400;
     font-style: normal;
 }
+
+@keyframes img-increase-size {
+    from {
+        width: inherit;
+        height: inherit;
+    }
+
+    to{
+        width: 120%;
+        height: 120%;
+    }
+}
+
+img:hover {
+    animation: img-increase-size 2s forwards;
+}
