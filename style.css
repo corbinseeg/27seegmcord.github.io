@@ -12,18 +12,25 @@
     font-style: normal;
 }
 
-@keyframes img-increase-size {
+@keyframes img-rotate {
     from {
-        width: inherit;
-        height: inherit;
+        transform: rotate(inherit);
     }
 
     to{
-        width: 120%;
-        height: 120%;
+        transform: rotate(360deg);
     }
 }
 
+
+img {
+    animation-timing-function: ease;
+}
+
 img:hover {
-    animation: img-increase-size 2s forwards;
+    animation: img-rotate 1s forwards;
+}
+
+img::after {
+    animation: img-rotate 1s backwards;
 }
