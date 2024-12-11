@@ -1,3 +1,8 @@
+/* External CSS for "27seegmcord.github.io". There isn't much here since the vast majority of styling and
+    page design is done via Tailwind CSS. */
+
+/* Fira CSS classes are for custom Fira fonts. Class names are self explanatory*/
+
 .fira-code {
     font-family: "Fira Code", monospace;
     font-optical-sizing: auto;
@@ -12,6 +17,7 @@
     font-style: normal;
 }
 
+/* Basic image spin animation. Spins the image with ease for 1 second. */
 @keyframes img-rotate {
     from {
         transform: rotate(inherit);
@@ -22,15 +28,18 @@
     }
 }
 
-
+/* Defines animation smoothing behavior. */
 img {
     animation-timing-function: ease;
 }
 
+/* Make image spin when mouse hovers over it. */
 img:hover {
     animation: img-rotate 1s forwards;
 }
 
+/* Supposed to make the image smoothly spin back when the user stops hovering over the image, 
+    but it doesn't seem to work. */
 img::after {
     animation: img-rotate 1s backwards;
 }

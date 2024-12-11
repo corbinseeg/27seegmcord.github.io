@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!--<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
@@ -20,20 +20,36 @@
 
 <body class="bg-gray-300 dark:bg-gray-900">
     <header>
+
+        <!-- Defines the navigation bar. -->
         <div class="rounded py-2 m-4 navbar items-center justify-center flex bg-gradient-to-r from-blue-500 to-purple-600">
             <a href="index.html"><button class="bg-purple-500 hover:bg-blue-700 mr-1 text-white font-bold py-2 px-4 rounded items-center">Home</button></a>
             <a href="skills.html"><button class="bg-purple-500 hover:bg-blue-700 mr-1 ml-1 text-white font-bold py-2 px-4 rounded items-center">My Skills</button></a>
             <a href="projects.html"><button class="bg-purple-500 hover:bg-blue-700 ml-1 text-white font-bold py-2 px-4 rounded items-center">My Projects</button></a>
         </div>
     </header>
+
     <main>
+
+        <!-- Sets the page grid for the main content. -->
         <div class="grid grid-cols-4 gap-3 m-4">
-            <img src="img/tux.jpg" alt="An image of tux the penguin, the linux mascot!" class="rounded-md image-me border-8 border-black dark:border-gray-400 bg-gradient-to-r mt-4 from-gray-600 to-black dark:from-gray-400 dark:to-white">
+
+            <!-- Shows page user is on. -->
+            <div></div>
+            <div class="rounded-md border-8 p-3 border-yellow-300 text-center col-span-2 mt-6 bg-gray-500 dark:text-white text-black">
+                <h1 class="fira-sans">Skills</h1>
+            </div>
+            <div></div>
+
+            <!-- Displays an image of Tux the Penguin and accompanying Linux paragraph. -->
+            <img src="img/tux.jpg" alt="An image of tux the penguin, the Linux mascot!" class="rounded-md image-me border-8 border-black dark:border-gray-400 bg-gradient-to-r mt-4 from-gray-600 to-black dark:from-gray-400 dark:to-white">
             <div class="rounded-md border-8 p-3 border-purple-700 content-center col-span-3 mt-6 bg-gray-500 dark:text-white text-black">
                 <p class="fira-code">One of my many skills is my strong knowledge of linux and several of it's most common system tools. 
                     I am capable of deploying just about any linux distro onto a system within a relatively short amount of time. 
                     I also prefer desktop linux over windows for just about every use case.</p>
             </div>
+
+            <!-- Defines the Python image and accompanying programming language paragraph. -->
             <div class="rounded-md border-8 p-3 content-center border-purple-700 col-span-3 mt-6 bg-gray-500 dark:text-white text-black">
                 <p class="fira-code">Along with linux, another one of my many skills is basic programming. 
                     I have taken a full in-school course in basic python and a full cource in computer science principles, 
@@ -46,6 +62,16 @@
         </div>
     </main>
     <footer>
+
+        <!-- Create credits box and accompanying text. -->
+        <div class="rounded-md border-8 content-center p-3 border-red-500 mt-6 bg-gray-500 dark:text-white text-black">
+            <p>
+                Linux is a property of Linus Torvalds. Python language is a propery of the Python software 
+                foundation, which I have no association with. Image credits: Tux the Penguin - 
+                <a class="text-purple-700" href="https://wikipedia.org/wiki/Linux" target="_blank">Wikipedia</a>, 
+                Python - <a class="text-purple-700" href="https://wikipedia.org/wiki/Python_(programming_language)">Wikipedia</a>
+            </p>
+        </div>
     </footer>
 </body>
 

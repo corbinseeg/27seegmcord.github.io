@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!--<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
@@ -29,7 +29,17 @@
     </header>
 
     <main>
+
+        <!-- Sets the page grid for the main content. -->
         <div class="grid grid-cols-4 gap-3 m-4 place-content-evenly">
+
+            <!-- Shows page user is on. -->
+            <div></div>
+            <div class="rounded-md border-8 p-3 border-yellow-300 text-center col-span-2 mt-6 bg-gray-500 dark:text-white text-black">
+                <h1 class="fira-sans">Home</h1>
+            </div>
+            <div></div>
+
             <img src="img/me.jpg" alt="A picture of me! (Corbin Seegmiller)" class="rounded-md image-me border-8 border-black dark:border-gray-400 bg-gradient-to-r mt-4 from-gray-600 to-black dark:from-gray-400 dark:to-white">
             <div class="rounded-md border-8 content-center p-3 border-orange-500 col-span-3 flex mt-4 dark:text-white dark:font-semibold text-black bg-gray-500">
                 <p class="fira-code">My name is Corbin Seegmiller. I am 16 years old and I reside in the city hurricane. 
@@ -48,6 +58,11 @@
     </main>
 
     <footer>
+        <div class="rounded-md border-8 content-center p-3 border-red-500 mt-6 bg-gray-500 dark:text-white text-black">
+            <p>
+                *Image of me is copyrighted. All rights reserved.*
+            </p>
+        </div>
     </footer>
 </body>
 

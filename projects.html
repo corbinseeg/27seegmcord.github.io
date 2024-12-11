@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!--<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
@@ -26,8 +26,19 @@
             <a href="projects.html"><button class="bg-purple-500 hover:bg-blue-700 ml-1 text-white font-bold py-2 px-4 rounded items-center">My Projects</button></a>
         </div>
     </header>
+
     <main>
+
+        <!-- Sets the page grid for the main content. -->
         <div class="grid grid-cols-4 gap-3 m-4">
+
+            <!-- Shows page user is on. -->
+            <div></div>
+            <div class="rounded-md border-8 p-3 border-yellow-300 text-center col-span-2 mt-6 bg-gray-500 dark:text-white text-black">
+                <h1 class="fira-sans">Projects</h1>
+            </div>
+            <div></div>
+
             <div class="rounded-md border-8 p-3 content-center border-gray-500 col-span-4 mt-6 bg-gray-500 dark:text-white text-black">
                 <p class="fira-code">
                     By far, my biggest project is one that was required of me 
@@ -39,7 +50,7 @@
                 </p>
             </div>
             <div></div>
-            <div class="rounded-md border-8 p-3 content-center border-orange-500 col-span-2 mt-6 bg-gray-500 dark:text-white text-black">
+            <div class="rounded-md border-8 p-3 content-center border-orange-500 col-span-2 mt-6 bg-gray-500 text-purple-700">
                 <a href="https://github.com/corbinseeg/create_performance_task" target="_blank">Create Task Github Repository</a>
             </div>
             <div></div>
@@ -52,13 +63,18 @@
                 </p>
             </div>
             <div></div>
-            <div class="rounded-md border-8 p-3 content-center border-orange-500 col-span-2 mt-6 bg-gray-500 dark:text-white text-black">
+            <div class="rounded-md border-8 p-3 content-center border-orange-500 col-span-2 mt-6 bg-gray-500 text-purple-700">
                 <a href="https://github.com/corbinseeg/guess_the_number_rs" target="_blank">Guessing Game Github Repository</a>
             </div>
             <div></div>
         </div>
     </main>
     <footer>
+        <div class="rounded-md border-8 content-center p-3 border-red-500 mt-6 bg-gray-500">
+            <p>
+                *I am not associated with Github&copy; in any manner. Github reserves all rights to their IP.*
+            </p>
+        </div>
     </footer>
 </body>
 
