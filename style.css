@@ -34,12 +34,12 @@ img {
 }
 
 /* Make image spin when mouse hovers over it. */
-img:hover {
+img.skill:hover {
     animation: img-rotate 1s forwards;
 }
 
 /* Supposed to make the image smoothly spin back when the user stops hovering over the image, 
     but it doesn't seem to work. */
-img::after {
+img.skill::after {
     animation: img-rotate 1s backwards;
 }
